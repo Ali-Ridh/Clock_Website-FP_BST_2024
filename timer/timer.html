@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Custom Timer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    timer
+    <div class="timer-container">
+        <div class="input-container">
+            <input type="number" id="hoursInput" min="0" placeholder="HH">
+            <input type="number" id="minutesInput" min="0" max="59" placeholder="MM">
+            <input type="number" id="secondsInput" min="0" max="59" placeholder="SS">
+        </div>
+        <h1 id="timer">00:00:00</h1>
+        <div class="buttons">
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
